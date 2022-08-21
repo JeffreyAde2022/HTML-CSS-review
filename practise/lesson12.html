@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .p12a {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .p12a1 {
+      background-color: lightblue;
+      width: 200px;
+    }
+
+    .p12a2 {
+      background-color: lightpink;
+      width: 75px;
+    }
+
+    .p12b {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .p12b1 {
+      background-color: lightblue;
+      width: 50px;
+    }
+
+    .p12b2 {
+      background-color: lightpink;
+      flex: 1;
+    }
+
+    .p12b3 {
+      background-color: yellow;
+      width: 75px;
+    }
+
+    .p12c {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .p12c1 {
+      background-color: lightpink;
+    }
+
+    .p12d {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 50px;
+      border: solid 1px grey;
+      align-items: center;
+    }
+
+    .p12d1 {
+      background-color: lightpink;
+    }
+
+    .p12e {
+      border: solid 1px rgb(200, 200, 200);
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    .p12e-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 6px 12px;
+    }
+
+    .p12btn {
+      color: white;
+      background-color: rgb(64, 108, 235);
+      border: none;
+      width: 40px;
+      height: 24px;
+      border-radius: 12px;
+    }
+
+    .p12f {
+      background-color: rgb(120, 82, 178);
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .p12fP {
+      color: white;
+      font-weight: bold;
+    }
+
+    .p12fInput {
+      width: 500px;
+      border: none;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 20px;
+    }
+
+    .p12fBtn {
+      width: 90px;
+      color: white;
+      background-color: transparent;
+      border: solid 1px white;
+      padding: 8px 15px;
+    }
+
+    .pet-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .pet-image {
+      vertical-align: top;
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 40px;
+      margin-right: 15px;
+    }
+
+    .pet-info {
+      /* display: flex;
+      flex-direction: column; */
+      width: 200px;
+
+    }
+
+    .pet-name {
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .pet-description,
+    .pet-status {
+      color: rgb(147, 147, 147);
+      margin-bottom: 5px;
+    }
+
+    .pet-follow-btn {
+      background-color: rgb(29, 155, 240);
+      color: white;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p12a">
+    <div class="p12a1">200px</div>
+    <div class="p12a2">75px</div>
+  </div>
+  <br>
+  <div class="p12b">
+    <div class="p12b1">item1</div>
+    <div class="p12b2">item2</div>
+    <div class="p12b3">item3</div>
+  </div>
+  <br>
+  <div class="p12c">
+    <div class="p12c1">item1</div>
+    <div class="p12c1">item2</div>
+    <div class="p12c1">item3</div>
+    <div class="p12c1">item4</div>
+  </div>
+  <br>
+  <div class="p12d">
+    <div class="p12d1">item1</div>
+    <div class="p12d1">item2</div>
+  </div>
+  <br>
+  <div class="p12e">
+    <div class="p12e-row">
+      <p class="p12p">Home</p>
+      <button class="p12btn">14</button>
+    </div>
+    <div class="p12e-row">
+      <p class="p12p">Notifications</p>
+      <button class="p12btn">3</button>
+    </div>
+    <div class="p12e-row">
+      <p class="p12p">Messages</p>
+      <button class="p12btn">5</button>
+    </div>
+  </div>
+  <br>
+  <div class="p12f">
+    <p class="p12fP">Home</p>
+    <input class="p12fInput" placeholder="Search" type="">
+    <button class="p12fBtn">Download</button>
+  </div>
+  <br>
+  <div class="p12g">
+    <div class="pet-card">
+      <img class="pet-image" src="/practise/thumbnails/P9cat.jpg" alt="">
+      <div class="pet-info">
+        <p class="pet-name">Oliver</p>
+        <p class="pet-description">the cat</p>
+        <p class="pet-status">Popular</p>
+      </div>
+      <button class="pet-follow-btn">Follow</button>
+    </div>
+    <div class="pet-card">
+      <img class="pet-image" src="/practise/thumbnails/P9cat2.jpg" alt="">
+      <div class="pet-info">
+        <p class="pet-name">Mimi</p>
+        <p class="pet-description">Sleepy cat</p>
+        <p class="pet-status">Popular</p>
+      </div>
+      <button class="pet-follow-btn">Follow</button>
+    </div>
+    <div class="pet-card">
+      <img class="pet-image" src="/practise/thumbnails/P9dog.jpg" alt="">
+      <div class="pet-info">
+        <p class="pet-name">Rex</p>
+        <p class="pet-description">Happy Bulldog</p>
+        <p class="pet-status">Popular</p>
+      </div>
+      <button class="pet-follow-btn">Follow</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

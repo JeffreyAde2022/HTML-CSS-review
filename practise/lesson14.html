@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* .p14a{
+      background-color: black;
+      color: white;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    } */
+    .p14b {
+      background-color: lightgreen;
+      color: white;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100px;
+    }
+
+    /* .p14c{
+      background-color: yellow;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    } */
+    .p14d {
+      /* background-color: rgba(0, 0, 0, 0.8); */
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p14d1 {
+      background-color: white;
+      width: 300px;
+      padding: 15px 10px;
+      border-radius: 5px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal {
+      background-color: white;
+      width: 300px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 5px;
+    }
+
+    .p14d1-1 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .p14d1-2 {
+      margin: 10px 0;
+    }
+
+    .p14d-btn {
+      padding: 2px 5px;
+    }
+
+    .p14e {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 50px;
+      height: 40px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .p14e-left {
+      display: flex;
+      align-items: center;
+      background-color: yellow;
+    }
+
+    .pet-image {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 20px;
+      margin-right: 10px;
+    }
+
+    .pet-name {
+      font-weight: bold;
+    }
+
+    .pet-addFriend {
+      background-color: lightblue;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+      margin-right: 5px;
+    }
+
+    .pet-message {
+      background-color: rgb(228, 230, 234);
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .p14f {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .p14f1 {
+      background-color: rgb(32, 34, 37);
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 56px;
+
+    }
+
+    .pet-image {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-bottom: 5px;
+    }
+
+    .p14f2 {
+      position: fixed;
+      top: 0;
+      left: 70px;
+      bottom: 0;
+      width: 180px;
+      background-color: rgb(48, 48, 48);
+      padding: 20px;
+    }
+
+    .row1 {
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      margin-bottom: 6px;
+      align-items: center;
+    }
+
+    .row2,
+    .row3,
+    .row4 {
+      color: rgb(100, 100, 100);
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+
+<body style="height:3000px ;">
+  <!-- <div class="p14a">bottom-right</div> -->
+  <!-- <div class="p14b">right sidebar</div> -->
+  <!-- <div class="p14c"></div> -->
+  <!-- <div class="p14d">
+    <div class="p14b">rightsider</div>
+    <div class="p14d1">
+      <div class="overlay">
+        <div class="modal">
+          <div class="p14d1-1">Modal Title</div>
+          <div class="p14d1-2">Thi is a modal</div>
+          <div class="p14d1-3"><button class="p14d-btn">Close</button></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <br>
+  <!-- <div class="p14e">
+    <div class="p14e-left">
+      <img class="pet-image" src="/practise/thumbnails/P9cat.jpg" alt="">
+      <div class="pet-name">Oliver Cat</div>
+    </div>
+    <div class="p14e-right">
+      <btn class="pet-addFriend">Add Friend</btn>
+      <btn class="pet-message">Message</btn>
+    </div>
+  </div> -->
+  <br>
+  <br>
+  <br>
+  <div class="p14f">
+    <div class="p14f1">
+      <img class="pet-image" src="/practise/thumbnails/P9cat.jpg" alt="">
+      <img class="pet-image" src="/practise/thumbnails/P9cat2.jpg" alt="">
+      <img class="pet-image" src="/practise/thumbnails/P9dog.jpg" alt="">
+    </div>
+    <div class="p14f2">
+      <div class="row1">
+        <div class="row1-1">INFO</div>
+        <div class="row1-2">+</div>
+      </div>
+      <div class="row2"># new-videos</div>
+      <div class="row3"># updates</div>
+      <div class="row4"># fag</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

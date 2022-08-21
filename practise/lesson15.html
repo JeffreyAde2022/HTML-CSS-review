@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .p15page {
+      width: auto;
+      height: 3000px;
+      background-color: lightcyan;
+    }
+
+    .p15a-btn,
+    .p15c-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      background-color: black;
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .p15b,
+    .p15c {
+      width: 320px;
+      height: 180px;
+      background-color: lightgrey;
+      position: fixed;
+      right: 50px;
+      bottom: 50px;
+    }
+
+    .p15c-btn {
+      position: absolute;
+      left: -15px;
+      top: -15px;
+    }
+
+    .p15d-time {
+      background-color: black;
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      padding: 3px 5px;
+      bottom: 8px;
+      right: 8px;
+    }
+
+    .p15e {
+      position: relative;
+      display: inline-block;
+    }
+
+    .shirt-img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      vertical-align: top;
+    }
+
+    .p15e-discount {
+      background-color: black;
+      color: white;
+      width: 60px;
+      text-align: center;
+      font-size: 14px;
+      position: absolute;
+      padding: 3px 5px;
+      top: 10px;
+      right: 0;
+    }
+
+    .p15f {
+      position: relative;
+      display: inline-block;
+    }
+
+    .shirt-img1 {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      vertical-align: top;
+    }
+
+    .p15f-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .p15f-addbtn {
+      padding: 10px 15px;
+      background-color: white;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="p15page">
+    <button class="p15a-btn">X</button>
+    <div class="p15b"></div>
+    <div class="p15c">
+      <button class="p15c-btn">X</button>
+      <div class="p15d-time">0:29</div>
+    </div>
+  </div>
+  <br>
+  <div class="p15e">
+    <img class="shirt-img" src="/practise/thumbnails/shirt.jpg" alt="">
+    <div class="p15e-discount">20% OFF</div>
+  </div>
+  <br>
+  <br>
+
+  <div class="p15f">
+    <img class="shirt-img1" src="/practise/thumbnails/shirt (1).jpg" alt="">
+    <div class="p15e-discount">20% OFF</div>
+    <div class="p15f-overlay">
+      <button class="p15f-addbtn">Add to Cart</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
