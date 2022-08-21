@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .grid1 {
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    }
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 100px 1fr 2fr;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid1">
+    <div style="background-color: lightblue">grid-1</div>
+    <div style="background-color: lightpink">grid-2</div>
+    <div style="background-color: orange">grid-3</div>
+  </div>
+  <br>
+  <div class="grid2">
+    <div style="background-color: lightpink">grid-2</div>
+    <div style="background-color: lightblue">grid-1</div>
+    <div style="background-color: orange">grid-3</div>
+  </div>
+  <br>
+  <div class="flex">
+    <div style="background-color: lightblue;width: 100px;">flex-1</div>
+    <div style="background-color: lightpink;flex:1">flex-2</div>
+    <div style="background-color: orange;flex:2">flex-3</div>
+  </div>
+  <br>
+  <div class="flex">
+    <div style="background-color: lightpink;flex:1">flex-2</div>
+    <div style="background-color: lightblue;width: 100px;">flex-1</div>
+    <div style="background-color: orange;flex:2">flex-3</div>
+  </div>
+
+
+
+</body>
+
+</html>
